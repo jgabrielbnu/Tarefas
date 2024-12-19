@@ -1,0 +1,162 @@
+/* ===============================
+   RESET DE MÁRGENAS E PADDINGS
+   =============================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===============================
+   ESTILOS GLOBAIS
+   =============================== */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;  /* Fundo escuro para o tema Dark */
+    color: #e0e0e0;             /* Texto claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;        /* Alinhamento centralizado */
+    min-height: 100vh;          /* Garantir altura mínima */
+    padding: 0 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* ===============================
+   CONTAINER DO FORMULÁRIO
+   =============================== */
+.container {
+    background-color: #1f1f1f; /* Fundo escuro */
+    padding: 30px;
+    border-radius: 12px;        /* Bordas arredondadas */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 600px;           /* Largura máxima */
+    border: 1px solid #333;     /* Borda sutil */
+    transition: box-shadow 0.3s ease;
+}
+
+/* ===============================
+   TÍTULO DO FORMULÁRIO
+   =============================== */
+header h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;   /* Cor branca para o título */
+    font-size: 24px;
+}
+
+/* ===============================
+   ESTILOS DOS CAMPOS DE ENTRADA
+   =============================== */
+.input-group {
+    margin-bottom: 20px;   /* Espaçamento entre os campos */
+}
+
+label {
+    font-size: 16px;
+    color: #f1f1f1;        /* Cor de texto clara */
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Estilos comuns para campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;  /* Cor de borda */
+    border-radius: 8px;      /* Bordas arredondadas */
+    font-size: 16px;
+    background-color: #333;  /* Cor de fundo escura */
+    color: #fff;             /* Texto claro */
+    margin-bottom: 15px;     /* Espaçamento inferior */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Foco nos campos de entrada */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    background-color: #555; /* Cor mais clara ao focar */
+    border-color: #4CAF50;  /* Borda verde ao focar */
+}
+
+/* Estilo especial para o campo textarea */
+textarea {
+    resize: vertical;
+    min-height: 120px;       /* Altura mínima para o campo de texto */
+}
+
+/* ===============================
+   ESTILOS PARA OS CAMPOS DE SELEÇÃO
+   =============================== */
+fieldset {
+    border: none;
+    margin-bottom: 20px;     /* Espaçamento abaixo dos campos */
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f1f1f1;          /* Cor de texto clara */
+}
+
+label input {
+    margin-right: 10px;      /* Espaçamento entre o texto e o radio button */
+    accent-color: #4CAF50;   /* Cor do círculo do radio button */
+}
+
+/* ===============================
+   ESTILOS DO BOTÃO DE ENVIO
+   =============================== */
+button.submit-btn {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 50px;  /* Bordas arredondadas para o botão */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Efeitos do botão ao passar o mouse */
+button.submit-btn:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de levantar o botão */
+}
+
+/* Efeitos do botão ao clicar */
+button.submit-btn:active {
+    background-color: #3e8e41; /* Cor ao clicar */
+    transform: translateY(0);   /* Efeito de pressionar o botão */
+}
+
+/* ===============================
+   RESPONSIVIDADE
+   =============================== */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;   /* Reduzindo o padding em telas menores */
+    }
+
+    button.submit-btn {
+        padding: 12px 25px; /* Ajustando o padding do botão */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;   /* Ajuste para telas pequenas */
+    }
+
+    button.submit-btn {
+        padding: 10px 20px; /* Ajuste para telas muito pequenas */
+    }
+}
