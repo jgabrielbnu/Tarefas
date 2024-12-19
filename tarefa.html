@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Preencha o formulário</h1>
+        </header>
+
+        <form id="form" name="form">
+            <div class="input-group">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required>
+            </div>
+
+            <fieldset>
+                <legend>Qual matéria deseja lecionar?</legend>
+                <label>
+                    <input type="radio" name="materia" value="Matematica"> Matemática
+                </label>
+                <label>
+                    <input type="radio" name="materia" value="Portugues"> Português
+                </label>
+                <label>
+                    <input type="radio" name="materia" value="Biologia"> Biologia
+                </label>
+                <label>
+                    <input type="radio" name="materia" value="Ciencias"> Ciências
+                </label>
+                <label>
+                    <input type="radio" name="materia" value="Historia"> História
+                </label>
+                <label>
+                    <input type="radio" name="materia" value="Geografia"> Geografia
+                </label>
+                <label>
+                    <input type="radio" name="materia" value="Artes"> Artes
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Nível de escolaridade</legend>
+                <label>
+                    <input type="radio" name="ensino" value="Ensino superior completo"> Ensino superior completo
+                </label>
+                <label>
+                    <input type="radio" name="ensino" value="Cursando mestrado"> Cursando mestrado
+                </label>
+                <label>
+                    <input type="radio" name="ensino" value="Mestrado completo"> Mestrado completo
+                </label>
+                <label>
+                    <input type="radio" name="ensino" value="Cursando doutorado"> Cursando doutorado
+                </label>
+                <label>
+                    <input type="radio" name="ensino" value="Doutorado completo"> Doutorado completo
+                </label>
+            </fieldset>
+
+            <div class="input-group">
+                <label for="descricao">Faça uma descrição sobre você:</label>
+                <textarea id="descricao" name="descricao"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar mensagem</button>
+        </form>
+    </div>
+</body>
+
+</html>
